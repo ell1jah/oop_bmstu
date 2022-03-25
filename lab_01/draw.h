@@ -9,17 +9,9 @@
 #include "paint.h"
 #include <cstddef>
 
-struct canvas
-{
-    QGraphicsScene *scene;
-    double width;
-    double height;
-};
-
 using canvas_t = struct canvas;
 
 void draw_edges(const edges_t &edges, const points_t &points, \
                 const canvas_t &canvas);
-void canvas_clear(const canvas_t &canvas);
 
 #endif // DRAW_H
