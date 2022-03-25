@@ -15,8 +15,3 @@ void draw_edges(const edges_t &edges, const points_t &points, \
     for (size_t i = 0; i < edges.cnt; i++)
         draw_edge(edges.data[i], points, canvas);
 }
-
-void canvas_clear(const canvas_t &canvas)
-{
-    canvas.scene->clear();
-}
